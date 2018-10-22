@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Droidcon Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+    <body>
+      <header>
+        <img src="img/Badoo_logo.png" alt="Badoo_logo" id="logo">
+      </header>
+      <div id="registration" class="container">
+        <h2>Welcome to Badoo quiz</h2>
+        <div class="main">
+          <form class="form" method="post" action="#">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="lastName" placeholder="Last name">
+            <input type="text" id="email" placeholder="Email">
+            <label>
+              <input type="checkbox" id="agreed"> I have read and agree to the <a href="termAndCondition.html" target="_blank">Terms and Conditions.</a>
+            </label>
+            <div class="wrapper-button">
+              <button id="register" value="Register">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div>
+        <h2 id="timeLeft" class="timer"></h2>
+      </div>
+
+      <div id="rule" class="container hidden">
+        <p class="question">OK, so here's how to play: <br> You get one minute to answer all five questions, and there's only one right answer per question – get at least four right and win a prize! <br> Good luck!</p>
+        <div class="wrapper-button">
+          <button id="start">Start</button>
+        </div>
+      </div>
+
+      <div id="quizContainer" class="container hidden">
+        <h2 id="questNumber"></h2>
+        <div id="question" class="question"></div>
+        <label class="option">
+          <input type="radio" name="option" value="1"/> <span id="opt1"></span>
+        </label>
+        <label class="option">
+          <input type="radio" name="option" value="2"/> <span id="opt2"></span>
+        </label>
+        <label class="option">
+          <input type="radio" name="option" value="3"/> <span id="opt3"></span>
+        </label>
+        <label class="option">
+          <input type="radio" name="option" value="4"/> <span id="opt4"></span>
+        </label>
+        <div class="wrapper-button">
+          <button id="nextButton">Next question</button>
+        </div>
+      </div>
+
+      <div id="final" class="container hidden">
+        <h2>The end</h2>
+        <p id="result" class="question"></p>
+        <div class="socialMedia">
+          <a href="https://twitter.com/BadooTech" target="_blank"><img src="img/twitter.png" alt="Twitter" width=45px></a>
+          <a href="https://github.com/badoo" target="_blank"><img src="img/github.png" alt="Github" width=45px></a>
+          <a href="https://badootech.badoo.com/" target="_blank"><img src="img/medium.png" alt="Medium" width=45px></a>
+          <a href="https://www.linkedin.com/company/badoo/" target="_blank"><img src="img/linkedin.png" alt="Facebook" width=45px></a>
+        </div>
+        <div class="wrapper-button">
+          <button id="tryAgain"><a href="main.html">Try again</a></button>
+        </div>
+      </div>
+    </body>
+  </html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Hide */
+
+/*LOGO*/
+#logo {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+/*FORM*/
+h2{
+  font-size: 30px;
+  text-align: center;
+  color: #7000E3;
+}
+div.container{
+  max-width: 550px;
+  /* height: 610px; */
+  margin: auto;
+  font-family: 'Roboto', serif;
+  position:relative;
+  text-align: justify;
+}
+
+div.main{
+  padding: 10px 10px 40px;
+  background-color: white;
+  border: 15px solid white;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+/* More padding on the sides when width if viewport is at least 550px */
+@media(min-width: 550px) {
+    div.main{
+      padding-left: 55px;
+      padding-right: 55px;
+      font-size: 13px;
+    }
+}
+
+input[type=text] {
+  width: 97.7%;
+  height: 34px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border: 1px;
+  border-bottom: 1px solid grey;
+  font-size: 12px;
+}
+
+.wrapper-button {
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  margin-top: 25px;
+  background: #7000E3;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 18px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+#register:hover {
+  background: grey;
+}
+
+/*question*/
+.question {
+  width: 100%;
+  min-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
+.option {
+  height: 35px;
+  display: block;
+  background: #efefef;
+  color: black;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.option:hover {
+  background: #7000E3;
+}
+
+#nextButton:hover {
+  background: grey;
+}
+
+.socialMedia {
+  display: block;
+  text-align: center;
+}
+
+#tryAgain:hover {
+  background: grey;
+}
+
+
+.timer {
+  color: black;
+  font-family: 'Roboto', serif;
+}
+
+.tAndC {
+  font-size: 15px;
+}
